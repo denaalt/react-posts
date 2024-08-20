@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "./comp/css/main.css";
+import posts from "./posts";
+import PostCard from "./comp/components/PostCard";
+import PostList from "./comp/components/PostList";
+
+//import "./css style/main.css"
+// import PostCard from "./comp/components/PostCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-post">
+      {/* <PostCard /> */}
+      <PostList />
     </div>
   );
 }
